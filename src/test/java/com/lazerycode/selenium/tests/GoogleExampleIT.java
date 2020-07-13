@@ -30,13 +30,13 @@ public class GoogleExampleIT extends DriverBase {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
-        googleHomePage.enterSearchTerm("Cheese")
-                .submitSearch();
+        //googleHomePage.enterSearchTerm("Cheese")
+        //        .submitSearch();
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
-        WebDriverWait wait = new WebDriverWait(driver, 10, 100);
-        wait.until(pageTitleStartsWith("Cheese"));
+        //WebDriverWait wait = new WebDriverWait(driver, 10, 100);
+        //wait.until(pageTitleStartsWith("Cheese"));
 
         // Should see: "cheese! - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
@@ -50,7 +50,7 @@ public class GoogleExampleIT extends DriverBase {
         WebDriver driver = getDriver();
 
         // And now use this to visit Google
-        driver.get("http://www.google.com");
+        driver.get("https://www.amazon.com/");
         // Alternatively the same thing can be done like this
         // driver.navigate().to("http://www.google.com");
 
@@ -59,13 +59,13 @@ public class GoogleExampleIT extends DriverBase {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
-        googleHomePage.enterSearchTerm("Milk")
-                .submitSearch();
+        //googleHomePage.enterSearchTerm("Milk")
+        //        .submitSearch();
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
-        WebDriverWait wait = new WebDriverWait(driver, 10, 100);
-        wait.until(pageTitleStartsWith("Milk"));
+        //WebDriverWait wait = new WebDriverWait(driver, 10, 100);
+        //wait.until(pageTitleStartsWith("Milk"));
 
         // Should see: "cheese! - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
